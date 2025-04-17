@@ -50,7 +50,7 @@ It matches how I typically use aliases—just for a few hours or days—so inste
 No need to mess with your .bashrc or .zshrc; the aliases are temporary, easy to set up, and just as easy to tear down.
 
  
-  * [This Git Page](https://github.com/itruffat/itruffat.github.io):  Besides what you are reading right now, this repo contains a workflow to automatically fetch information from other github proyects on your personal git account and automatically populate your readme file.
-This section of the code was created using it. For more information on how this works, please refer to `.gitpage/README.md` .
+  * [This Git Page](https://github.com/itruffat/itruffat.github.io):  Besides what you are reading right now, this repo contains a workflow to automatically fetch information from other github proyects on your personal git account, automatically populate your readme file and mirror it to your
+github account README. **This very Git Page was created using it**. For more information on how this works, please refer to its `.gitpage/README.md` .
 
  
