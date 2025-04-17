@@ -19,7 +19,8 @@ This approach ensures compatibility with nearly all computers and architectures,
   * [Microsoft's Visual Basic Wrapper](https://github.com/itruffat/VBW):  A Python wrapper that provides a straightforward interface for interacting with Microsoft Visual Basic by launching a Butler process that listens for and executes instructions.
 This is especially useful for working with Excel or Word files that contain complex structures —like splicers— which may not be properly understood (or may be damaged) by other Python libraries such as **openpyxl**.
 
-  * [Python Free Point](https://github.com/itruffat/python_point_free):  Allows the use of FreePointSyntax in Python.
+  * [Python Free Point](https://github.com/itruffat/python_point_free):  Small library that provides a decorator to use FreePoint-like Syntax in Python natively.
 > UTILITIES
-  * [This Git Page](https://github.com/itruffat/itruffat.github.io):  This repo contains a workflow to automatically fetch other github proyects and populate a page.
+  * [This Git Page](https://github.com/itruffat/itruffat.github.io):  Besides what you are reading right now, this repo contains a workflow to automatically fetch information from other github proyects on your personal git account and automatically populate your readme file.
+This section of the code was created using it. For more information on how this works, please refer to `.gitpage/README.md` .
 
