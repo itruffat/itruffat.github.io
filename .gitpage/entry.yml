@@ -3,4 +3,4 @@ category: utilities
 skip: False
 description : |
   Besides what you are reading right now, this repo contains a workflow to automatically fetch information from other github proyects on your personal git account, automatically populate your readme file and mirror it to your
-  github account README. This GitPage was created using it. For more information on how this works, please refer to its `.gitpage/README.md` .
+  github account README. **This very Git Page was created using it**. For more information on how this works, please refer to its `.gitpage/README.md` .

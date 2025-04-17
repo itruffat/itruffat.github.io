@@ -3,6 +3,8 @@ import base64
 import os
 import yaml
 import sys
+import time
+
 
 try:
     from .update import GithubConnector, USERNAME, REPO
@@ -23,6 +25,8 @@ def run(connector):
     if gitpage_content != userpage_content:
         message = f"Automatically mirrored from {USERNAME}/REPO by it's mirror script."
         connector.create_or_update_file(USERNAME,USERNAME, "README.md", gitpage_content, message)
+    else:
+        print("UNCHANGED content, skipping mirroring")
 
 
 if __name__ == "__main__":
@@ -30,6 +34,8 @@ if __name__ == "__main__":
     print("====")
     connector = GithubConnector() 
     if RUN_MIRROR:
+        time.sleep(25) # 
+        print("Waiting a  grace period to make sure the previous commit was properly received")
         run(connector)
     else:
         print("skipped mirroring")
