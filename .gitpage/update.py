@@ -96,7 +96,8 @@ def produce_summary(categories, entries, summary_path):
                 description = entries[entry]['description']
                 description += "\n" if description[-1] != "\n" else ""
                 output_content.append(f"  * [{entries[entry]['name']}]({link}):  {description}")
-
+                output_content.append(" ")
+                
     old_summary = ""
     if os.path.exists(summary_path):
         with open(summary_path, "r") as summary_read:
