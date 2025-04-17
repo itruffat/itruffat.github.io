@@ -45,8 +45,9 @@ This is especially useful for working with Excel or Word files that contain comp
  
 > UTILITIES
  
-  * [Quick-Alias](https://github.com/itruffat/QuickAlias.sh):  Bash script that enables the quick creation and destruction of aliases on terminals. This corresponds with the nature of how I usually use aliases, needing to use them for a cuople of hours (maybe days) and then removing them.
-Instead of needing to configure your terminal, the commands the script adds take care of that for you.
+  * [Quick-Alias](https://github.com/itruffat/QuickAlias.sh):  A lightweight Bash script for quickly creating and removing terminal aliases.
+It matches how I typically use aliases—just for a few hours or days—so instead of editing shell configs manually, this script handles everything for you. 
+No need to mess with your .bashrc or .zshrc; the aliases are temporary, easy to set up, and just as easy to tear down.
 
  
   * [This Git Page](https://github.com/itruffat/itruffat.github.io):  Besides what you are reading right now, this repo contains a workflow to automatically fetch information from other github proyects on your personal git account and automatically populate your readme file.
