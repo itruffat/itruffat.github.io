@@ -2,4 +2,5 @@ name: This Git Page
 category: utilities 
 skip: False
 description : |
-  This repo contains a workflow to automatically fetch other github proyects and populate a page.
+  Besides what you are reading right now, this repo contains a workflow to automatically fetch information from other github proyects on your personal git account and automatically populate your readme file.
+  This section of the code was created using it. For more information on how this works, please refer to `.gitpage/README.md` .
