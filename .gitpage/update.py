@@ -88,6 +88,7 @@ def produce_summary(categories, entries, summary_path):
 
     for category in ord_categories:
         output_content.append(f"> {category.upper()}")
+        output_content.append(" ")
         for entry in ord_entries:
             if entries[entry]["category"] == category:
                 link = f"https://github.com/{entries[entry]['owner']}/{entry}"
