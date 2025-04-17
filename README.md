@@ -6,6 +6,7 @@ Welcome to my GitPage!
 Here is a list of my repos:
 
 > ESOLANGUAGE-STUFF
+ 
   * [BF-nomenclature project](https://github.com/itruffat/BrainF_Nomenclature):  This repository contains a project aimed at standardizing the various implementations of BrainF*ck (BF) machines. 
 The goal is to address the language’s unspoken shortcoming as an otherwise perfect esolang - the reliance of most "tricks" on the specific configuration of the underlying BF machine.
 
@@ -19,11 +20,13 @@ Additionaly, hooks are available to do more powerful things, such as adding stop
 This approach ensures compatibility with nearly all computers and architectures, and as a result, we can run Whenever virtually everywhere!
 
 > MISC
+ 
   * [Four Languages Zipper](https://github.com/itruffat/PyJSZipper4Polyglots):  Focused on creating Polyglots (programs that can run on multiple interpreters), this repo can create a file to be read by up to 4 languages - Python, Javascript, Lua and Ruby!
 Functionality-wise, the zipper picks up programs in their original languages and then combines them in a very precise way so that the result will be valid in all languages.
 Not a very useful thing, but a really cool one!
 
 > PYTHON-UTILITY
+ 
   * [Gaming Selenium](https://github.com/itruffat/PygamingSelenium):  Using PyGaming, this library gives the user more power to interact with a selenium application and provide feedback. 
 Useful when you are designing an application that either [A] needs user interaction to work (such as requiring passwords) or [B] is there to give you an alternative way to navigate a website experience.
 
@@ -32,6 +35,7 @@ This is especially useful for working with Excel or Word files that contain comp
 
   * [Python Free Point](https://github.com/itruffat/python_point_free):  Small library that provides a decorator to use FreePoint-like Syntax in Python natively.
 > UTILITIES
+ 
   * [Quick-Alias](https://github.com/itruffat/QuickAlias.sh):  Bash script that enables the quick creation and destruction of aliases on terminals. This corresponds with the nature of how I usually use aliases, needing to use them for a cuople of hours (maybe days) and then removing them.
 Instead of needing to configure your terminal, the commands the script adds take care of that for you.
 
