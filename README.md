@@ -1,2 +1,3 @@
 
-test1
+{% include_relative repositories.summary %}
+

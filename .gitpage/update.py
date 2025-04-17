@@ -99,7 +99,15 @@ def produce_summary(categories, entries, summary_path):
         with open(summary_path, "r") as summary_read:
             old_summary = summary_read.read()
 
-    new_summary = '\n'.join(output_content)
+    new_info = '\n'.join(output_content)
+
+    template_summary = "[REPOS-LIST]"
+    if os.path.exists(f"{summary_path}.template"):
+        with open(f"{summary_path}.template", "r") as template_read:
+            template_summary = template_read.read()
+
+
+    new_summary = template_summary.replace("[REPOS-LIST]", new_info)
 
     return new_summary if old_summary != new_summary else None
 
@@ -139,7 +147,7 @@ def main():
         categories.append(content["category"])
 
 
-    summary_path = "repositories.summary"
+    summary_path = "README.md"
 
  
     if(new_summary := produce_summary(categories, entries, summary_path)):
