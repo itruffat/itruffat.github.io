@@ -28,3 +28,12 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.FOR_POLLING }}"
           GITHUB_USERNAME: "${{ vars.USER_FOR_POLLING }}"
           GITHUB_REPO: "${{ github.repository }}"
+
+      - name: Mirroring the README 
+        run: python .gitpage/mirror.py
+        env:
+          GITHUB_TOKEN: "${{ secrets.FOR_POLLING }}"
+          GITHUB_USERNAME: "${{ vars.USER_FOR_POLLING }}"
+          GITHUB_REPO: "${{ github.repository }}"   
+          RUN_MIRROR: "${{ vars.RUN_MIRROR }}"
+
