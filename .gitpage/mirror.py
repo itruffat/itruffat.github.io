@@ -21,7 +21,8 @@ def run(connector):
     userpage_content = connector.get_file_content(USERNAME, USERNAME, "README.md")
 
     if gitpage_content != userpage_content:
-        connector.create_or_update_file(USERNAME,USERNAME, "README.md", gitpage_content)
+        message = f"Automatically mirrored from {USERNAME}/REPO by it's mirror script."
+        connector.create_or_update_file(USERNAME,USERNAME, "README.md", gitpage_content, message)
 
 
 if __name__ == "__main__":

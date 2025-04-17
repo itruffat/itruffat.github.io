@@ -61,12 +61,12 @@ class GithubConnector:
             raise Exception(f"Error checking file: {res.status_code} {res.text}")
 
 
-    def create_or_update_file(self,owner, repo, file_path, new_content):
+    def create_or_update_file(self,owner, repo, file_path, new_content, message):
         url = f"https://api.github.com/repos/{owner}/{repo}/contents/{file_path}"
         encoded_content = base64.b64encode(new_content.encode()).decode()
 
         payload = {
-            "message": f"Automatically patched {file_path} via gitpages-update",
+            "message": message,
             "content": encoded_content,
             "branch": "main",  
         }
@@ -150,7 +150,8 @@ def run(connector, summary_path):
 
     summary = produce_summary(categories, entries, summary_path)
     if summary:
-        connector.create_or_update_file(USERNAME,REPO, summary_path, summary)
+        message = f"Automatically patched {summary_path} via gitpages-update"
+        connector.create_or_update_file(USERNAME,REPO, summary_path, summary, message)
 
 
 
