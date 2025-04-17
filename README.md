@@ -6,6 +6,9 @@ Welcome to my GitPage!
 Here is a list of my repos:
 
 > ESOLANGUAGE-STUFF
+  * [BF-nomenclature project](https://github.com/itruffat/BrainF_Nomenclature):  This repository contains a project aimed at standardizing the various implementations of BrainF*ck (BF) machines. 
+The goal is to address the language’s unspoken shortcoming as an otherwise perfect esolang - the reliance of most "tricks" on the specific configuration of the underlying BF machine.
+
   * [Jesting Lang](https://github.com/itruffat/JestingLang):  Abstract syntax, parser, and interpreter for a language designed to emulate the behavior of spreadsheet processors, from Excel to Google Sheets.
 It is intended as a foundation for other applications that can run on this surprisingly powerful and expressive syntax.
 
