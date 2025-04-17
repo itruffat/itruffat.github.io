@@ -34,6 +34,7 @@ Useful when you are designing an application that either [A] needs user interact
 This is especially useful for working with Excel or Word files that contain complex structures —like splicers— which may not be properly understood (or may be damaged) by other Python libraries such as **openpyxl**.
 
   * [Python Free Point](https://github.com/itruffat/python_point_free):  Small library that provides a decorator to use FreePoint-like Syntax in Python natively.
+
 > UTILITIES
  
   * [Quick-Alias](https://github.com/itruffat/QuickAlias.sh):  Bash script that enables the quick creation and destruction of aliases on terminals. This corresponds with the nature of how I usually use aliases, needing to use them for a cuople of hours (maybe days) and then removing them.
