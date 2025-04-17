@@ -16,6 +16,9 @@ It is intended as a foundation for other applications that can run on this surpr
 This approach ensures compatibility with nearly all computers and architectures, and as a result, we can run Whenever virtually everywhere!
 
 > PYTHON-UTILITY
+  * [Microsoft's Visual Basic Wrapper](https://github.com/itruffat/VBW):  A Python wrapper that provides a straightforward interface for interacting with Microsoft Visual Basic by launching a Butler process that listens for and executes instructions.
+This is especially useful for working with Excel or Word files that contain complex structures —like splicers— which may not be properly understood (or may be damaged) by other Python libraries such as **openpyxl**.
+
   * [Python Free Point](https://github.com/itruffat/python_point_free):  Allows the use of FreePointSyntax in Python.
 > UTILITIES
   * [This Git Page](https://github.com/itruffat/itruffat.github.io):  This repo contains a workflow to automatically fetch other github proyects and populate a page.
