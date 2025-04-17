@@ -144,7 +144,8 @@ def main():
             print(f"Repo {name} skipped due to bad config")
             del entries[name]
             continue
-        categories.append(content["category"])
+        if content["category"] not in categories:
+            categories.append(content["category"])
 
 
     summary_path = "README.md"
