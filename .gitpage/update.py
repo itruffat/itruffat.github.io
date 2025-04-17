@@ -76,9 +76,33 @@ def create_or_update_file(owner, repo, file_path, new_content):
 
     res = requests.put(url, headers=HEADERS, json=payload)
     if res.status_code in (200, 201):
-        print(f"File '{FILE_PATH}' committed successfully!")
+        print(f"File '{file_path}' committed successfully!")
     else:
         raise Exception(f" Failed to commit: {res.status_code}\n{res.text}")
+
+
+def produce_summary(categories, entries, summary_path):
+    output_content = []
+    ord_entries = sorted(entries.keys())
+    ord_categories = sorted(categories)
+
+    for category in ord_categories:
+        output_content.append(f"> {category.upper()}")
+        for entry in ord_entries:
+            if entries[entry]["category"] == category:
+                link = f"https://github.com/{entries[entry]['owner']}/{entry}"
+                output_content.append(f"  * [{entries[entry]['name']}]({link}):  {entries[entry]['description']}")
+
+
+    old_summary = ""
+    if os.path.exists(summary_path):
+        with open(summary_path, "r") as summary_read:
+            old_summary = summary_read.read()
+
+    new_summary = '\n'.join(output_content)
+
+    return new_summary if old_summary != new_summary else None
+
 
 
 
@@ -114,31 +138,12 @@ def main():
             continue
         categories.append(content["category"])
 
-    ord_categories = sorted(categories)
-    ord_entries = sorted(entries.keys())
-    output_content = []
 
-    for category in ord_categories:
-        output_content.append(f"> {category.upper()}")
-        for entry in ord_entries:
-            if entries[entry]["category"] == category:
-                link = f"https://github.com/{entries[entry]['owner']}/{entry}"
-                output_content.append(f"  * [{link}]({entries[entry]['name']}):  {entries[entry]['description']}")
+    summary_path = "repositories.summary"
 
-    summary_path = "repositories_summary.md"
-
-    old_summary = ""
-    if os.path.exists(summary_path):
-        with open(summary_path, "r") as summary_read:
-            old_summary = summary_read.read()
-
-    new_summary = '\n'.join(output_content)
-
-    if old_summary != new_summary:
+ 
+    if(new_summary := produce_summary(categories, entries, summary_path)):
         create_or_update_file(USERNAME,REPO, summary_path, new_summary)
-
-
-
 
 
 
