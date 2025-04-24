@@ -11,9 +11,9 @@ Here is a list of my repos:
 The goal is to address the language’s unspoken shortcoming as an otherwise perfect esolang - the reliance of most "tricks" on the specific configuration of the underlying BF machine.
 
  
-  * [ComeHere interpreter](https://github.com/itruffat/ComeHerePy):  A python Interpreter based on the ComeHere language, an eso-language with a really interesting concept. (turning a 
-reversed GOTO statement into the only way to control workflow  which I find really. v1 with my modifications is still
-a W.I.P.
+  * [ComeHere interpreter](https://github.com/itruffat/ComeHerePy):  This is an interpreter for ComeHere, an esoteric programming language built around a fascinating concept: reversing 
+the traditional GOTO statement into the only means of controlling program flow. V1 — with my custom modifications — is 
+still a WIP.
 
  
   * [Jesting Lang](https://github.com/itruffat/JestingLang):  Abstract syntax, parser, and interpreter for a language designed to emulate the behavior of spreadsheet processors, from Excel to Google Sheets.
