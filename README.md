@@ -7,7 +7,7 @@ Here is a list of my repos:
 
 > ESOLANGUAGE-STUFF
  
-  * [BF-nomenclature project](https://github.com/itruffat/BrainF_Nomenclature):  This repository contains a project aimed at standardizing the various implementations of BrainF*ck (BF) machines. 
+  * [BF-nomenclature project](https://github.com/itruffat/BrainF_Nomenclature):  This repository contains a project aimed at standardizing the various implementations of BF machines. 
 The goal is to address the language’s unspoken shortcoming as an otherwise perfect esolang - the reliance of most "tricks" on the specific configuration of the underlying BF machine.
 
  
